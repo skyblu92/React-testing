@@ -2,7 +2,7 @@ import React from 'react'
 
 const Todos = ({todos, deleteTodo}) => {
 
-    const todoList = todos.length != 0 ? ( //show each item in collection
+    const todoList = todos.length !== 0 ? ( //show each item in collection
         todos.map(todo => {                
         return (
             <div className="collection-item" key={todo.id}>
